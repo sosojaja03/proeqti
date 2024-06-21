@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.75%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+
+p {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+}
+@font-face {
+  font-family: myfont;
+  src: url(/Fonts/static/DancingScript-VariableFont_wght.ttf);
+}
+
+/*global*/
+
+/*Main Page*/
+
+.logo img {
+  height: 5.5rem;
+  margin-right: 7rem;
+}
+
+header {
+  min-height: 15rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0 3rem 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5rem;
+}
+
+.burger {
+  display: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 5rem;
+  font-size: 2.5rem;
+}
+
+.nav-links a {
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #e6730a;
+}
+
+.nav ul li:last-child a {
+  background-color: #e6730a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.nav ul li:last-child a:hover {
+  color: white;
+}
+
+.InfoBOX {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: white;
+}
+
+.BoxImage {
+  display: flex;
+  flex-direction: column;
+  min-height: 80rem;
+  padding-top: 10rem;
+  width: 100%;
+  /* background-color: rgb(223, 223, 223); */
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0rem 0rem 6rem 5rem inset; */
+}
+
+.BoxImage:hover {
+  /* background-color: rgba(211, 109, 13, 0.596); */
+  /* box-shadow: 0rem 0rem 15rem 7rem hsl(49, 17%, 68%) inset; */
+  box-shadow: 0rem 0rem 15rem 5rem rgba(211, 109, 13, 0.596) inset;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.BoxImage img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.about-sauce {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 5rem 0 5rem;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.589),
+      rgba(34, 34, 34, 0.568)
+    ),
+    url(../Images//burger-and-sauce_hr_early_2020_77-1536x1025.jpg);
+}
+
+.about-burger {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 5rem 0 5rem;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.589),
+      rgba(34, 34, 34, 0.568)
+    ),
+    url(../Images//burger-and-sauce_hr_early_2020_20-1536x1025.jpg);
+}
+
+.about-sauce_burger {
+  color: white;
+  padding: 5rem;
+  max-width: 80rem;
+}
+
+.about-sauce_burger h2 {
+  font-size: 5.5rem;
+  border-left: 0.5rem solid rgba(255, 123, 0, 0.719);
+  padding: 1rem;
+}
+
+.about-sauce_burger p {
+  margin: 5rem 0 5rem;
+}
+
+.menubutton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  width: 13em;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.9rem;
+  transition: background-color 0.4s ease;
+}
+
+.menubutton a:hover {
+  background-color: #ffffff;
+  color: rgb(255, 140, 0);
+  animation: grow 0.5s ease forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.CARDBOX {
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  margin: 5rem 0 5rem;
+}
+
+.CARDImage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  margin: 1rem;
+}
+
+.CARDImage img {
+  max-width: 5rem;
+}
+.CARDImage p {
+  font-size: 3rem;
+  font-family: myfont;
+  margin: 3rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  padding: 3rem 0;
+  height: 30rem;
+  margin-top: 10rem;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin: 5rem;
+}
+.footer-links p {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.footer-links a {
+  font-size: 2rem;
+}
+
+/* End of MainPage */
+
+/* MenuPage*/
+.MenuCover {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background: url(../Images/food-photographer-X92WLoaQ1_o-unsplash.jpg)
+    no-repeat center center;
+  background-size: cover;
+}
+
+.MenuCover h1 {
+  font-size: 9rem;
+  color: white;
+}
+
+.MenuCover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MenuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+.OriginalBurger {
+  width: 80%;
+  height: auto;
+  background-color: #fffdeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 5rem;
+}
+.LimitedBurger {
+  width: 80%;
+  height: auto;
+  background-color: #fffdeb;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.Original-LimitedBurgerInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  width: 100%;
+  margin: 1rem;
+  justify-content: space-evenly;
+}
+
+.infotext {
+  height: auto;
+  width: 30rem;
+  text-align: center;
+}
+.Original-LimitedBurgerInfo:hover {
+  background-color: white;
+  box-shadow: 0rem 1rem 2rem 1rem hsl(49, 17%, 68%);
+}
+.infotext p {
+  color: rgba(0, 0, 0, 0.658);
+}
+.Original-LimitedBurgerInfo img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.OriginalBurger > img {
+  width: 20rem;
+}
+
+.LimitedBurger > img {
+  width: 20rem;
+}
+
+/* End Of MenuPage */
+
+/*About Us*/
+
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 80rem;
+  color: rgba(255, 255, 255, 0.842);
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.589),
+      rgba(34, 34, 34, 0.568)
+    ),
+    url(../Images/jesson-mata-I2Erl2cU_A4-unsplash.jpg);
+  padding: 10rem;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.BIG {
+  height: 20rem;
+  width: 20rem;
+  background-color: RED;
+}
+
+/* End Of About Us */
+
+/*Locations*/
+
+.grid-container {
+  width: 100%;
+  height: 80rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 32.5% 32.5% 32.5%;
+  margin: 10rem 0 20rem;
+}
+
+.grid-item h3 {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.801);
+}
+
+.grid-item1 {
+  background-color: #ca6b13;
+  grid-column: 1 / span 2;
+}
+.grid-item1 h1 {
+  font-size: 7rem;
+  color: white;
+}
+.first {
+  background: url(../Images/tetiana-shevereva-ytL5sD333Qw-unsplash.jpg)
+    no-repeat center center;
+}
+.second {
+  background: url(../Images/restaurant1.jpg) no-repeat center center;
+}
+.third {
+  background: url(../Images/alexander-startsev-ndNw_6QGR_c-unsplash.jpg)
+    no-repeat center center;
+}
+.Fourth {
+  background: url(../Images/arthur-edelmans-hMaOghbaU4w-unsplash.jpg) no-repeat
+    center center;
+}
+.Fifth {
+  background: url(../Images/amin-ramezani-j1S4cckG-9s-unsplash.jpg) no-repeat
+    center center;
+}
+.Sixth {
+  background: url(../Images/paula-vermeulen-URjZkhqsuBk-unsplash.jpg) no-repeat
+    center center;
+}
+.Seventh {
+  background: url(../Images/artem-bryzgalov-zc06PdeGzs4-unsplash.jpg) no-repeat
+    center center;
+}
+
+.grid-item {
+  background-size: cover;
+  min-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container a:hover {
+  animation: grow 0.5s ease forwards;
+}
+
+.MapContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MapContainer h2 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 5rem;
+}
+iframe {
+  width: 80vw;
+  height: 80vh;
+}
+/*End Of Locations */
+
+/*registration page*/
+
+.containerwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../Images/black_and_blue_burger_95881_16x9.jpg) no-repeat
+    center center;
+}
+
+.RegistrationTitle-LogInTitle {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.reglink {
+  font-size: 2rem;
+  display: flex;
+}
+
+.reglink a {
+  margin: 0 1rem 0;
+}
+
+.SignInButton button {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+.container {
+  min-height: 50rem;
+  width: 50rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+  backdrop-filter: blur(10px);
+}
+.container label {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+/* .gender-details {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.gender-details input {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+} */
+
+.input-box input {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.ChooseCountry {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.ChooseCountry select {
+  width: 52.4rem;
+}
+
+.reglink a {
+  /* color: hsl(240, 100%, 50%); */
+  color: rgba(255, 255, 255, 0.904);
+}
+.mainreg {
+  display: none;
+}
+fieldset {
+  border: none;
+}
+legend {
+  display: none;
+}
+/* end of registration page*/
+
+@media (max-width: 1280px) {
+  .logo img {
+    height: 4rem;
+  }
+  .nav-links ul li {
+    margin-left: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 965px) {
+  header {
+    padding: 1rem;
+  }
+  .nav-links ul li {
+    margin-left: 1.5rem;
+    font-size: 1.75rem;
+  }
+  .logo img {
+    height: 3rem;
+    margin-right: 5rem;
+  }
+  .Original-LimitedBurgerInfo img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .infotext p {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.658);
+  }
+  .InfoBOX {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 0 5rem 0;
+  }
+  .nav ul li:last-child a {
+    background-color: white;
+    border-radius: 0;
+    padding: 0;
+  }
+  .nav ul li:last-child a:hover {
+    color: #e6730a;
+  }
+  .logo img {
+    height: 5rem;
+  }
+
+  .Original-LimitedBurgerInfo {
+    flex-direction: column;
+    height: 50rem;
+  }
+  .Original-LimitedBurgerInfo img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .infotext p {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.658);
+  }
+
+  .container {
+    width: 40rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .mainreg {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 15rem;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav ul li:last-child a:hover {
+    color: #e6730a;
+  }
+
+  .nav-links ul li {
+    margin: 1rem 0;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+
+  html {
+    font-size: 50%;
+  }
+  .footer-container p {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+}
+
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+/*
+mobile devices:319px - 480px
+ipads and tablets :481px - 1200px
+laptops :1201px - 1600px
+desktop:1601px  and more
+
+*/
